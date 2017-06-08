@@ -1,0 +1,23 @@
+{
+    "name": "phpkit/redis",
+    "description": "redis 当做缓存用",
+    "keywords": [
+        "redis"
+    ],
+    "homepage": "http://www.phpkit.me/",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "wen",
+            "email": "35994512@qq.com"
+        }
+    ],
+    "config": {
+        "preferred-install": "dist"
+    },
+     "autoload": {
+        "psr-4": {
+            "phpkit\\redis\\": "src/"
+        }
+    }
+}
