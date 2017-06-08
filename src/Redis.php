@@ -33,8 +33,8 @@ class Redis {
 			);
 		}
 		$this->options = $options;
-		$this->options['expire'] = isset($options['expire']) ? $options['expire'] : C('DATA_CACHE_TIME');
-		$this->options['prefix'] = isset($options['prefix']) ? $options['prefix'] : C('DATA_CACHE_PREFIX');
+		$this->options['expire'] = isset($options['expire']) ? $options['expire'] : 0;
+		$this->options['prefix'] = isset($options['prefix']) ? $options['prefix'] : '';
 		$this->options['length'] = isset($options['length']) ? $options['length'] : 0;
 		$func = $options['persistent'] ? 'pconnect' : 'connect';
 		$this->handler = new \Redis;
